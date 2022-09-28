@@ -5,6 +5,362 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <header class="page_header">
+      <img class="logo" src="" alt="Логотип магазина мороженого Глейси">
+      <nav class="navigation">
+          <ul class="navigation_list">
+              <li class="navigation_item">
+                  <a class="navigation_link" href="#">Каталог</a>
+              </li>
+              <li class="navigation_item">
+                  <a class="navigation_link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="navigation_item">
+                  <a class="navigation_link" href="#">О компании</a>
+              </li>
+          </ul>
+          <ul class="navigation_list navigation_user">
+              <li class="navigation_item">
+                  <a class="navigation_link" href="tel:88005558628">+7 800 555-86-28</a>
+              </li>
+              <li class="navigation_item">
+                  <a class="navigation_link" href="#">
+                      <span class="visually_hidden">Поиск</span>
+                  </a>
+              </li>
+              <li class="navigation_item">
+                  <a class="navigation_link" href="#">Вход</a>
+              </li>
+              <li class="navigation_item">
+                  <a class="navigation_link" href="#">
+                      <span class="visually_hidden">Корзина</span>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+
+  <main class="main_index">
+      <h1 class="visually_hidden">Магазин мороженого "Глейси"</h1>
+
+      <section class="slider">
+          <h2 class="visually_hidden">Ассортимент</h2>
+
+          <!--Нужен ли здесь заголовок?-->
+              <p class="slider_text"><h3>Нежный пломбир<br> с клубничным джемом</h3></p>
+              <p class="slider_text">Натуральное мороженое из свежих сливок<br>
+              и молока с вкуснейшим клубничным джемом –<br>
+              это идеальный десерт для всей семьи. </p>
+              <a class="button button_order" href="#">Заказать</a>
+              <!--Нужен ли здесь неупорядоченный список для картинок мороженого?-->
+              <p><img class="slide_photo_current" src="" alt="Нежный пломбир с клубничным джемом (основное)">
+                  <button class="slider_button slider_prev" type="button">
+                      <span class="visually_hidden">Предыдущее фото</span>
+                  </button>
+                  <button class="slider_button slider_next" type="button">
+                      <span class="visually_hidden">Следующее фото</span>
+                  </button>
+                  <!--Являются ли изображения силуэтов контентными? Если нет, нужно ли их размечать?-->
+              <img class="slide_photo" src="" alt="Сливочное мороженое со вкусом банана (силуэт)">
+              <img class="slide_photo" src="" alt="Карамельный пломбир с маршмеллоу (силуэт)"></p>
+
+              <!--<p class="slider_text"><h3>Сливочное мороженое<br> со вкусом банана</h3></p>
+              <p class="slider_text">Сливочное мороженое с ярким банановым<br>
+              вкусом подарит вам свежесть и наслаждение<br>
+              даже в самый жаркий летний день.</p>
+              <p><img class="slide_photo_current" src="" alt="Сливочное мороженое со вкусом банана (основное)">
+                   <button class="slider_button slider_prev" type="button">
+                      <span class="visually_hidden">Предыдущее фото</span>
+                  </button>
+                  <button class="slider_button slider_next" type="button">
+                      <span class="visually_hidden">Следующее фото</span>
+                  </button>
+              <img class="slide_photo" src="" alt="Карамельный пломбир с маршмеллоу (силуэт)">
+              <img class="slide_photo" src="" alt="Нежный пломбир с клубничным джемом (силуэт)"></p>
+
+              <p class="slider_text"><h3>Карамельный пломбир<br> с маршмеллоу</h3></p>
+              <p class="slider_text">Необычный сладкий десерт с карамельным<br>
+              топпингом и кусочками зефира завоюет<br>
+              сердца сладкоежек всех возрастов.</p>
+              <p><img class="slide_photo_current" src="" alt="Карамельный пломбир с маршмеллоу (основное)">
+                  <button class="slider_button slider_prev" type="button">
+                      <span class="visually_hidden">Предыдущее фото</span>
+                  </button>
+                  <button class="slider_button slider_next" type="button">
+                      <span class="visually_hidden">Следующее фото</span>
+                  </button>
+              <img class="slide_photo_next" src="" alt="Нежный пломбир с клубничным джемом (силуэт)">
+              <img class="slide_photo_next" src="" alt="Сливочное мороженое со вкусом банана (силуэт)"></p>-->
+
+              <ol class="slider_pagination">
+                  <li class="slider_pagination_item">
+                    <button class="slider_pagination_button slider_pagination_button_current" type="button">
+                      <span class="visually_hidden">1 слайд</span>
+                    </button>
+                  </li>
+                  <li class="slider_pagination_item">
+                      <button class="slider_pagination_button" type="button">
+                        <span class="visually_hidden">2 слайд</span>
+                      </button>
+                  </li>
+                  <li class="slider_pagination_item">
+                      <button class="slider_pagination_button" type="button">
+                        <span class="visually_hidden">3 слайд</span>
+                      </button>
+                  </li>
+              </ol>
+
+              <ul class="slider_social_list">
+                  <li class="slider_social_items">
+                      <a class="slider_social_link" href="https://t.me/htmlacademy">
+                      <span class="visually_hidden">Телеграм</span>
+                      </a>
+                  </li>
+                  <li class="slider_social_items">
+                      <a class="slider_social_link" href="https://vk.com/htmlacademy">
+                          <span class="visually_hidden">Вконтакте</span>
+                      </a>
+                  </li>
+                  <li class="slider_social_items">
+                      <a class="slider_social_link" href="https://www.youtube.com/user/htmlacademyru">
+                          <span class="visually_hidden">Ютуб</span>
+                      </a>
+                  </li>
+              </ul>
+      </section>
+
+      <section class="banner">
+          <h2 class="visually_hidden">Дополнительное предложение</h2>
+              <p class="banner_title">Заказывайте мороженое и получайте подарки!</p>
+                  <ul class="banner_list">
+                      <li class="banner_item">
+                          <p class="banner_item_title">Малинка даром!</p>
+                          <p class="banner_item_text">При покупке 2 кг любого фруктового<br>
+                          мороженого добавим в ваш заказ банку<br>
+                          малинового варенья бесплатно.</p>
+                          <a class="button button_order" href="#">Хочу подарок</a>
+                      </li>
+                      <li class="banner_item">
+                          <p class="banner_item_title">Маршмеллоу даром!</p>
+                          <p class="banner_item_text">При покупке 2 кг пломбира добавим<br>
+                          в ваш заказ упаковку нежных<br>
+                          зефирок совершенно бесплатно.</p>
+                          <a class="button button_order" href="#">Хочу подарок</a>
+                      </li>
+                  </ul>
+      </section>
+
+      <section class="popular_products">
+          <h2 class="visually_hidden">Популярные товары</h2>
+          <p class="popular_products_title">Попробуйте самые популярные вкусы нашего мороженого</p>
+          <ul class="popular_products_list">
+              <li class="popular_products_item">
+                  <!--Нужно ли здесь оформлять текст как подпись, через тег figure\figcaption?-->
+                  <figure class="popular_products_sign">
+                      <img class="popular_products_image" src="" alt="Сливочное мороженое с малиновым джемом">
+                      <figcaption class="popular_products_description">
+                          <p class="popular_products_title">Малинка</p>
+                          <p class="popular_products_text">Сливочное мороженое<br>
+                          с малиновым джемом</p>
+                          <p class="popular_products_price">310 ₽/кг</p>
+                          <a class="button button_order" href="#">
+                              <span class="visually_hidden">Корзина</span>
+                          </a>
+                      </figcaption>
+                  </figure>
+              </li>
+              <li class="popular_products_item">
+                  <figure class="popular_products_sign">
+                      <img class="popular_products_image" src="" alt="Фисташковый пломбир с кусочками шоколада">
+                      <figcaption class="popular_products_description">
+                          <p class="popular_products_title">Фисташка</p>
+                          <p class="popular_products_text">Фисташковый пломбир<br>
+                          с кусочками шоколада</p>
+                          <p class="popular_products_price">340 ₽/кг</p>
+                          <a class="button button_order" href="#">
+                              <span class="visually_hidden">Корзина</span>
+                          </a>
+                      </figcaption>
+                  </figure>
+              </li>
+              <li class="popular_products_item">
+                  <figure class="popular_products_sign">
+                      <img class="popular_products_image" src="" alt="Крем-брюле с черничным джемом">
+                      <figcaption class="popular_products_description">
+                          <p class="popular_products_title">Черника</p>
+                          <p class="popular_products_text">Крем-брюле<br>
+                          с черничным джемом</p>
+                          <p class="popular_products_price">330 ₽/кг</p>
+                          <a class="button button_order" href="#">
+                              <span class="visually_hidden">Корзина</span>
+                          </a>
+                      </figcaption>
+                  </figure>
+              </li>
+              <li class="popular_products_item">
+                  <figure class="popular_products_sign">
+                      <img class="popular_products_image" src="" alt="Ванильный пломбир со сладкой посыпкой">
+                      <figcaption class="popular_products_description">
+                          <p class="popular_products_title">Бабл-гам</p>
+                          <p class="popular_products_text">Ванильный пломбир<br>
+                          со сладкой посыпкой</p>
+                          <p class="popular_products_price">320 ₽/кг</p>
+                          <a class="button button_order" href="#">
+                              <span class="visually_hidden">Корзина</span>
+                          </a>
+                      </figcaption>
+                  </figure>
+              </li>
+          </ul>
+      </section>
+
+      <section class="about">
+          <h2 class="visually_hidden">О магазине</h2>
+          <p class="about_title">Магазин Глейси – это онлайн и офлайн-магазин по продаже<br>
+          мороженого собственного производства на развес</p>
+          <ul class="about_list">
+              <li class="about_items">
+                  <p class="about_text">Всё наше мороженое изготавливается на собственном<br>
+                  производстве с использованием современного<br>
+                  оборудования и проверенных временем технологий.</p>
+              </li>
+              <li class="about_items">
+                  <p class="about_text">Закупка ингредиентов производится только<br>
+                  у проверенных фермерских хозяйств, с которыми<br>
+                  нас связывает долговременное сотрудничество.</p>
+              </li>
+              <li class="about_items">
+                  <p class="about_text">Для приготовления мороженого используются сливки<br>
+                  и молоко высочайшего качества. Все ингредиенты<br>
+                  и добавки произведены из натурального сырья.</p>
+              </li>
+              <li class="about_items">
+                  <p class="about_text">Доставка нашего мороженого осуществляется в<br>
+                  специальном термопаке, который не даёт мороженому<br>
+                  растаять и позволяет сохранить превосходный вкус.</p>
+              </li>
+          </ul>
+      </section>
+
+      <article class="blog">
+          <h2 class="visually_hidden">Новости блога</h2>
+          <p class="blog_title">Новое в нашем блоге</p>
+          <a class="blog_article_link" href="#">10 способов сервировки<br>
+          фруктовых щербетов к<br>
+          столу</a>
+      </article>
+
+      <!--Здесь нужен section?-->
+      <section class="newsletter">
+          <h2 class="visually_hidden">Рассылка</h2>
+          <form class="newsletter_email" action="" method="post">
+              <p class="sending_email_text"> Подпишитесь на нашу сладкую рассылку и будьте всегда<br>
+              в курсе всего самого вкусного, что у нас происходит. Обещаем<br>
+              не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <p class="sending_email_area">
+                  <input class="sending_subscription_email_field" type="email" name="user_email" value="email@example.com">
+                  <button class="sending_subscription_email_button" type="submit">Отправить</button>
+              </p>
+          </form>
+      </section>
+
+      <section class="delivery">
+          <h2 class="visually_hidden">Доставка</h2>
+          <h3 class="delivery_heading">Доставка любимого мороженого на дом</h3>
+          <p class="delivery_text">Хочется полакомиться любимым десертом,<br>
+          но нет времени съездить в магазин? Закажите<br>
+          доставку мороженого на дом, и курьер<br>
+          привезёт вам ваш заказ в течение часа!</p>
+          <p class="delivery_form_text">Укажите адрес и дату доставки, и мы свяжемся<br>
+          с вами, чтобы подтвердить заказ.</p>
+          <form class="delivery_user_data" action="https://echo.htmlacademy.ru" method="post">
+              <p class="delivery_user_form">
+                  <label class="delivery_date"><b>Дата</b>
+                      <input class="field" type="date" name="delivery_date" placeholder="01.04.2020">
+                  </label>
+                  <label class="delivery_phone_number"><b>Телефон</b>
+                      <input class="field" type="tel" name="phone_number" placeholder="+7 800 999-00-00">
+                  </label>
+              </p>
+              <p class="delivery_user_form">
+                  <label class="delivery_address"><b>Адрес</b>
+                      <input class="field" type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
+                  </label>
+              </p>
+              <p class="delivery_user_form">
+                  <input class="button send_button" type="submit" name="delivery_data" placeholder="Отправить">
+              </p>
+          </form>
+      </section>
+
+      <section class="contacts">
+          <h2 class="visually_hidden">Контакты</h2>
+          <address class="contacts_adress">
+              <h3 сlass="contacts_adress_heading">Адрес главного офиса<br>
+              и офлайн магазина:</h3>
+              <p class="contacts_info">наб. реки Карповки,<br>
+              5 лит П, Санкт-Петербург</p>
+          </address>
+          <p class="contacts_tel">Для заказов по телефону:</p>
+          <a class="contacts_tel" href="tel:88128121212">+7 (812) 812-12-12</a>
+          <p class="contacts_schedule">(с 10 до 20 ежедневно)</p>
+          <a class="feedback_button" href="#">Форма обратной связи</a>
+      </section>
+  </main>
+
+  <footer class="page_footer">
+
+      <section class="footer_social">
+          <h2 class="visually_hidden">Социальные сети</h2>
+              <ul class="footer_social_list">
+                  <li class="footer_social_items">
+                      <a class="footer_social_link" href="https://t.me/htmlacademy">
+                          <span class="visually_hidden">Телеграм</span>
+                      </a>
+                  </li>
+                  <li class="footer_social_items">
+                      <a class="footer_social_link" href="https://vk.com/htmlacademy">
+                          <span class="visually_hidden">Вконтакте</span>
+                      </a>
+                  </li>
+                  <li class="footer_social_items">
+                      <a class="footer_social_link" href="https://www.youtube.com/user/htmlacademyru">
+                          <span class="visually_hidden">Ютуб</span>
+                      </a>
+                  </li>
+              </ul>
+      </section>
+
+      <section class="footer_additional_info">
+          <h2 class="visually_hidden">Дополнительная информация</h2>
+          <ul class="footer_additional_info_list">
+              <li class="footer_additional_info_item">
+                  <a class="footer_additional_info_link" href="#"><b>Для поставщиков</b></a>
+              </li>
+              <li class="footer_additional_info_item">
+                  <a class="footer_additional_info_link" href="#">О производстве</a>
+              </li>
+              <li class="footer_additional_info_item">
+                  <a class="footer_additional_info_link" href="#">Наши документы</a>
+              </li>
+              <li class="footer_additional_info_item">
+                  <a class="footer_additional_info_link" href="#">Экологические стандарты</a>
+              </li>
+          </ul>
+      </section>
+
+      <section class="footer_made_in">
+          <h2 class="visually_hidden">Сделано в .HTML Academy</h2>
+          <p class="footer_made_in_text">
+              <a class="footer_made_in_link" href="https://htmlacademy.ru/">
+                  <img class="footer_made_in_logo" src="" alt="Логотип .html academy">
+              </a>
+          </p>
+          <p class="footer_made_in_text">
+              Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+          </p>
+      </section>
+  </footer>
 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
 
