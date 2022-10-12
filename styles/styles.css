@@ -207,7 +207,8 @@ body.pink {
 /*Рассылка*/
 .newsletter {
     background-image: url(../images/backgrounds/newsletter_postcard_background.jpg);
-    background-size: 100% auto;
+    width: 570px;
+    height: 224px;
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     border-radius: 16px;
