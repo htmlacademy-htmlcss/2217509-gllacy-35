@@ -22,11 +22,14 @@
     font-display: swap;
 }
 
-body.pink {
+body {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: #2D3440;
+}
+
+.pink {
     background-color: #FEAFC3;
 }
 
@@ -36,7 +39,6 @@ body.pink {
     background-color: #FEAFC3;
 }
 .navigation_link {
-    font-family: inherit;
     font-weight: 400;
     line-height: 20px;
     color: #2D3440;
@@ -170,6 +172,7 @@ body.pink {
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     border-radius: 16px;
+    padding: 24px;
 }
 
 .about_title {
@@ -183,11 +186,16 @@ body.pink {
     color: #565C66;
 }
 
+.about_content {
+    background: #FFFFFF;
+    border-radius: 16px;
+
+}
+
 /*Блог*/
 .blog {
     background-image: url(../images/backgrounds/blog_icecream_background.jpg);
-    width: 570px;
-    height: 224px;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     border-radius: 16px;
 }
@@ -207,8 +215,7 @@ body.pink {
 /*Рассылка*/
 .newsletter {
     background-image: url(../images/backgrounds/newsletter_postcard_background.jpg);
-    width: 570px;
-    height: 224px;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     border-radius: 16px;
@@ -218,11 +225,19 @@ body.pink {
     color: #565C66;
 }
 
+input::placeholder {
+    line-height: 20px;
+    color: #B9B9B9;
+}
+
+.newsletter_content {
+    background: #FFFFFF;
+    border-radius: 16px;
+}
 /*Доставка*/
 .delivery {
     background-image: url(../images/backgrounds/delivery_icecream_background.jpg);
-    width: 1170px;
-    height: 534px;
+    background-size: 100% auto;
     border-radius: 16px;
 }
 
@@ -251,15 +266,12 @@ body.pink {
 .contacts {
     background-image: url(../images/backgrounds/contacts_waffle_cones_icecream_background.jpg);
     border-radius: 16px;
-    width: 1170px;
-    height: 492px;
+    background-size: 100% auto;
 }
 
-.contacts_block {
+.contacts_content {
     background-color: #FCFCFC;
     border-radius: 8px;
-    width: 343px;
-    height: 364px;
 }
 
 .contacts_adress,
