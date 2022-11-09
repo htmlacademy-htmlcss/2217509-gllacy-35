@@ -22,8 +22,17 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Inter", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #2D3440;
@@ -38,7 +47,31 @@ body {
     color: #2D3440;
     background-color: #FEAFC3;
 }
+
+.navigation {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.navigation_logo {
+    width: 137px;
+    margin-right: 16px;
+}
+
+.navigation-list {
+    width:540px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation_user {
+    max-width: 460px;
+    margin-left: auto;
+  }
+
 .navigation_link {
+    font-family: inherit;
     font-weight: 400;
     line-height: 20px;
     color: #2D3440;
@@ -69,11 +102,36 @@ body {
 }
 
 /*Main*/
+
+.main_container {
+    flex-grow: 1;
+}
+
+.page_container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
 .main_index {
     color: #2D3440;
     background-color: #FEAFC3;
 }
 /*Слайдер розовый*/
+.slider {
+    margin: 0;
+    padding: 0;
+}
+
+.slider_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider_description {
+    width: 470px;
+}
+
+
 .slider_title {
     font-weight: 900;
     font-size: 36px;
@@ -109,7 +167,36 @@ body {
     border-radius: 26px;
 }
 
+.slider_footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.slider_pagination {
+    width: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider_social_list {
+    max-width: 150px;
+    margin-left: auto;
+}
+
 /*Баннер*/
+.banner {
+    margin: 0;
+    padding: 0;
+}
+
+.banner_list {
+    display: flex;
+    width: 1170px;
+    margin: auto 0;
+    padding: 0;
+}
+
 .banner_title {
     font-weight: 900;
     font-size: 32px;
@@ -118,9 +205,16 @@ body {
 }
 
 .banner_item {
+    width: 570px;
+    margin-left: auto;
+    padding: 0;
     background: #FF7799;
     border-radius: 16px;
-    padding: 36px 200px 36px 36px;
+}
+
+.raspberry {
+    margin: 0;
+    padding: 0;
 }
 
 .banner_item_text {
@@ -138,12 +232,25 @@ body {
 }
 
 /*Популярные продукты*/
-.popular_products,
-.product_card {
+.popular_products {
+    margin: 0;
+    padding: 0;
+}
+
+.popular_products_list {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+    padding: 0;
+}
+
+.popular_products_item {
+    max-width: 270px;
     background-color: #FCFCFC;
     border-radius: 8px;
     text-align: center;
 }
+
 .popular_products_title {
     font-weight: 900;
     font-size: 32px;
@@ -173,6 +280,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 16px;
     padding: 24px;
+    margin: 0;
 }
 
 .about_title {
@@ -180,6 +288,23 @@ body {
     font-size: 32px;
     line-height: 46px;
     text-align: center;
+    margin: 0 auto;
+}
+
+.about_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.about_items {
+    width: 505.5px;
+    margin-left: 32px;
+}
+
+.about_list li:nth-child(2n) {
+    margin-left: auto;
 }
 
 .about_text {
@@ -189,15 +314,24 @@ body {
 .about_content {
     background: #FFFFFF;
     border-radius: 16px;
-
+    width: 1122px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Блог*/
+.blog_newsletter_content {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+    padding: 0;
+}
 .blog {
     background-image: url(../images/backgrounds/blog_icecream_background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     border-radius: 16px;
+    width: 570px;
 }
 
 .blog_title {
@@ -219,6 +353,12 @@ body {
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     border-radius: 16px;
+    max-width: 570px;
+    margin-left: auto;
+}
+
+.newsletter_content {
+    width: 558px;
 }
 
 .sending_email_text {
@@ -234,11 +374,22 @@ input::placeholder {
     background: #FFFFFF;
     border-radius: 16px;
 }
+
 /*Доставка*/
 .delivery {
     background-image: url(../images/backgrounds/delivery_icecream_background.jpg);
     background-size: 100% auto;
     border-radius: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery_content {
+    width: 371px;
+    margin-left: 100px;
+    padding: 0;
 }
 
 .delivery_title {
@@ -250,6 +401,8 @@ input::placeholder {
 .delivery_form {
     background-color: #FCFCFC;
     border-radius: 8px;
+    width: 500px;
+    margin-right: 64px;
 }
 
 .delivery_text,
@@ -267,11 +420,15 @@ input::placeholder {
     background-image: url(../images/backgrounds/contacts_waffle_cones_icecream_background.jpg);
     border-radius: 16px;
     background-size: 100% auto;
+    margin: 0;
+    padding: 0;
 }
 
 .contacts_content {
     background-color: #FCFCFC;
     border-radius: 8px;
+    width: 343px;
+    margin-left: 64px;
 }
 
 .contacts_adress,
@@ -306,6 +463,22 @@ a.contacts_tel {
 }
 
 /*Футер*/
+.page_footer_container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.footer_social {
+    width: 150px;
+    margin-right: 253px;
+}
+
+.footer_additional_info {
+    width: 356px;
+    margin-right: 200px;
+}
+
 .footer_additional_info_link {
     font-family: inherit;
     font-weight: 400;
@@ -317,6 +490,11 @@ a.contacts_tel {
 
 .provider {
     font-weight: 700;
+}
+
+.footer_made_in {
+    max-width: 193px;
+    margin-right: 14px;
 }
 
 .footer_made_in_text,
@@ -344,10 +522,34 @@ a.contacts_tel {
 }
 
 /*Каталог, сортировка товара*/
-.control,
+
+.catalog_upper_row {
+    display: flex;
+}
+
+.control {
+    font-size: 14px;
+    line-height: 20px;
+    width: 196px;
+    margin-right: 24px;
+}
+
 .catalog_filter {
     font-size: 14px;
     line-height: 20px;
+}
+
+.fats {
+    width: 383px;
+}
+
+.catalog_lower_row {
+    display: flex;
+}
+
+.fillers {
+    width: 604px;
+    margin-right: 16px;
 }
 
 .button_apply {
