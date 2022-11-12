@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Inter";
     font-style: normal;
-    font-size: 400;
+    font-weight: 400;
     src: url(../fonts/inter-400.woff2) format(woff2);
     font-display: swap;
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: "Inter";
     font-style: normal;
-    font-size: 700;
+    font-weight: 700;
     src: url(../fonts/inter-700.woff2) format(woff2);
     font-display: swap;
 }
@@ -17,7 +17,7 @@
 @font-face {
     font-family: "Inter";
     font-style: normal;
-    font-size: 900;
+    font-weight: 900;
     src: url(../fonts/inter-900.woff2) format(woff2);
     font-display: swap;
 }
@@ -239,6 +239,7 @@ body {
 
 .popular_products_list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto 0;
     padding: 0;
@@ -332,6 +333,12 @@ body {
     background-repeat: no-repeat;
     border-radius: 16px;
     width: 570px;
+}
+
+.blog_content {
+    width: 303px;
+    margin-left: 32px;
+    margin-right: 235px;
 }
 
 .blog_title {
@@ -429,6 +436,7 @@ input::placeholder {
     border-radius: 8px;
     width: 343px;
     margin-left: 64px;
+    margin-right: 763px;
 }
 
 .contacts_adress,
