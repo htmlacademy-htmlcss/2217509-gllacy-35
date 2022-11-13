@@ -38,6 +38,17 @@ body {
     color: #2D3440;
 }
 
+.visually_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .pink {
     background-color: #FEAFC3;
 }
@@ -52,6 +63,7 @@ body {
     display: flex;
     width: 1170px;
     margin: 0 auto;
+    padding-top: 24px;
 }
 
 .navigation_logo {
@@ -59,11 +71,19 @@ body {
     margin-right: 16px;
 }
 
-.navigation-list {
+.navigation_list {
+    display: flex;
+    flex-wrap: wrap;
     width:540px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
   }
+
+.navigation_user .navigation_link .navigation_link_user {
+  min-width: 8px;
+  min-height: 8px;
+}
 
   .navigation_user {
     max-width: 460px;
@@ -71,6 +91,8 @@ body {
   }
 
 .navigation_link {
+    display: block;
+    padding: 8px 16px;
     font-family: inherit;
     font-weight: 400;
     line-height: 20px;
@@ -105,6 +127,8 @@ body {
 
 .main_container {
     flex-grow: 1;
+    padding-top: 24px;
+    padding-bottom: 48px;
 }
 
 .page_container {
@@ -119,7 +143,7 @@ body {
 /*Слайдер розовый*/
 .slider {
     margin: 0;
-    padding: 0;
+    padding: 0 0 80px 0;
 }
 
 .slider_item {
@@ -137,6 +161,8 @@ body {
     font-size: 36px;
     line-height: 46px;
     text-align: left;
+    margin-top: 136px;
+    margin-bottom: 24px;
 }
 
 .slider_text {
@@ -144,6 +170,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     text-align: left;
+    margin: 0 0 48px 0;
 }
 
 .button_dark {
@@ -177,17 +204,19 @@ body {
     width: 90px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .slider_social_list {
     max-width: 150px;
     margin-left: auto;
+    list-style-type: none;
 }
 
 /*Баннер*/
 .banner {
     margin: 0;
-    padding: 0;
+    padding: 0 0 80px 0;
 }
 
 .banner_list {
@@ -195,6 +224,7 @@ body {
     width: 1170px;
     margin: auto 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .banner_title {
@@ -202,10 +232,12 @@ body {
     font-size: 32px;
     line-height: 46px;
     text-align: center;
+    margin: 0 0 55px 0;
 }
 
 .banner_item {
     width: 570px;
+    min-height: 268px;
     margin-left: auto;
     padding: 0;
     background: #FF7799;
@@ -222,6 +254,7 @@ body {
     font-size: 16px;
     line-height: 22px;
     text-align: left;
+    margin: 0 0 28px 36px;
 }
 
 .banner_item_title {
@@ -229,12 +262,19 @@ body {
     font-size: 24px;
     line-height: 30px;
     text-align: left;
+    margin: 36px 116px 28px 36px;
+}
+
+.button_gift {
+  margin: 0 0 0 36px;
+  padding: 12px 32px  12px  32px;
+  border-radius: 26px;
 }
 
 /*Популярные продукты*/
 .popular_products {
     margin: 0;
-    padding: 0;
+    padding: 0 0 80px 0;
 }
 
 .popular_products_list {
@@ -243,6 +283,7 @@ body {
     justify-content: space-between;
     margin: auto 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .popular_products_item {
@@ -252,12 +293,17 @@ body {
     text-align: center;
 }
 
+.popular_products_name {
+  margin: 0 40px 8px;
+}
+
 .popular_products_title {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
     background-color: #FEAFC3;
     text-align: center;
+    margin: 0 0 56px 0;
 }
 
 .popular_product_card_link,
@@ -271,6 +317,7 @@ body {
 
 .popular_products_text {
     color: #565C66;
+    margin: 0 40px 16px;
 }
 
 /*О магазине*/
@@ -281,7 +328,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 16px;
     padding: 24px;
-    margin: 0;
+    margin: 0 0 80px 0;
 }
 
 .about_title {
@@ -289,7 +336,7 @@ body {
     font-size: 32px;
     line-height: 46px;
     text-align: center;
-    margin: 0 auto;
+    margin: 56px auto;
 }
 
 .about_list {
@@ -297,6 +344,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
+    list-style-type: none;
 }
 
 .about_items {
@@ -325,7 +373,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: auto 0;
-    padding: 0;
+    padding: 0 0 80px 0;
 }
 .blog {
     background-image: url(../images/backgrounds/blog_icecream_background.jpg);
@@ -333,6 +381,7 @@ body {
     background-repeat: no-repeat;
     border-radius: 16px;
     width: 570px;
+    min-height: 224px;
 }
 
 .blog_content {
@@ -343,6 +392,8 @@ body {
 
 .blog_title {
     color: #565C66;
+    margin-top: 32.6px;
+    margin-bottom: 12px;
 }
 
 .blog_article_link {
@@ -351,6 +402,8 @@ body {
     line-height: 30px;
     color: inherit;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 /*Рассылка*/
@@ -362,14 +415,24 @@ body {
     border-radius: 16px;
     max-width: 570px;
     margin-left: auto;
+    padding: 6px;
 }
 
 .newsletter_content {
     width: 558px;
+    background: #FFFFFF;
+    border-radius: 16px;
 }
 
 .sending_email_text {
+    display: block;
     color: #565C66;
+    padding: 26px 26px 42px;
+    margin: 0;
+}
+
+.newsletter_email {
+  padding: 0 26px 26px 26px;
 }
 
 input::placeholder {
@@ -377,18 +440,13 @@ input::placeholder {
     color: #B9B9B9;
 }
 
-.newsletter_content {
-    background: #FFFFFF;
-    border-radius: 16px;
-}
-
 /*Доставка*/
 .delivery {
     background-image: url(../images/backgrounds/delivery_icecream_background.jpg);
     background-size: 100% auto;
     border-radius: 16px;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 80px;
+    padding: 64px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -403,6 +461,8 @@ input::placeholder {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
+    margin-bottom: 26px;
+    margin-top: 101px;
 }
 
 .delivery_form {
@@ -412,9 +472,15 @@ input::placeholder {
     margin-right: 64px;
 }
 
-.delivery_text,
+.delivery_text {
+  color: #565C66;
+  margin: 0;
+}
+
 .delivery_form_text {
-    color: #565C66;
+  color: #565C66;
+  display: block;
+  margin: 40px 80px 32px 40px
 }
 
 .delivery_user_data {
@@ -428,7 +494,7 @@ input::placeholder {
     border-radius: 16px;
     background-size: 100% auto;
     margin: 0;
-    padding: 0;
+    padding: 64px 0;
 }
 
 .contacts_content {
@@ -437,6 +503,12 @@ input::placeholder {
     width: 343px;
     margin-left: 64px;
     margin-right: 763px;
+    padding: 40px;
+}
+
+.contacts_adress_heading {
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .contacts_adress,
@@ -448,11 +520,18 @@ input::placeholder {
     color: #565C66;
 }
 
+p.contacts_tel {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
 .contacts_info {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #2D3440;
+    margin-top: 0;
+    margin-bottom: 24px;
 }
 
 a.contacts_tel {
@@ -462,12 +541,15 @@ a.contacts_tel {
     line-height: 24px;
     text-decoration: none;
     color: #2D3440;
+    margin: 0;
 }
 
 .contacts_schedule {
     font-size: 14px;
     line-height: 20px;
     color: #565C66;
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 
 /*Футер*/
@@ -475,6 +557,7 @@ a.contacts_tel {
     display: flex;
     width: 1170px;
     margin: 0 auto;
+    padding-bottom: 48px;
 }
 
 .footer_social {
@@ -482,9 +565,57 @@ a.contacts_tel {
     margin-right: 253px;
 }
 
+.footer_social_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 0 0 4px;
+  padding: 0;
+}
+
+.footer_social_items {
+  min-width: 24px;
+  min-height: 24px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+}
+
+.footer_social_list li:nth-last-child(last) {
+  margin-right: 0;
+}
+
 .footer_additional_info {
-    width: 356px;
-    margin-right: 200px;
+    width: 380px;
+    margin-right: 152px;
+}
+
+.footer_additional_info_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer_additional_info_item {
+  max-width: 182px;
+}
+
+.footer_additional_info_list li:nth-child(1) {
+  margin: 0 24px 8px 0;
+}
+
+.footer_additional_info_list li:nth-child(2) {
+  margin: 0 0 8px 0;
+}
+
+.footer_additional_info_list li:nth-child(3) {
+  margin: 0 38px 0 0;
+}
+
+.footer_additional_info_list li:nth-child(4) {
+  margin: 0;
 }
 
 .footer_additional_info_link {
@@ -505,6 +636,11 @@ a.contacts_tel {
     margin-right: 14px;
 }
 
+.footer_made_in_content {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
 .footer_made_in_text,
 .htmlacademy-link {
     font-family: inherit;
@@ -512,6 +648,7 @@ a.contacts_tel {
     font-size: 12px;
     line-height: 16px;
     color: inherit;
+    margin: 0;
 }
 
 /*Каталог, хедер*/
@@ -529,10 +666,34 @@ a.contacts_tel {
     text-decoration: underline;
 }
 
-/*Каталог, сортировка товара*/
+/*Каталог, главная*/
+.main_inner {
+  padding-top: 32px;
+  padding-bottom: 88px;
+}
 
+.glacyshop_list {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+
+.glacyshop_item {
+  margin-right: 28px;
+}
+
+.inner_header_title {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+/*Каталог, сортировка товара*/
 .catalog_upper_row {
     display: flex;
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 
 .control {
@@ -547,12 +708,33 @@ a.contacts_tel {
     line-height: 20px;
 }
 
+.catalog_filter_title {
+  padding: 0 0 8px;
+}
+
+.catalog_filter_list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px 24px;
+}
+
+.catalog_filter_item {
+  margin-right: 16px;
+}
+
+.catalog_filter_list li:nth-child(last) {
+  margin-right: 0;
+}
+
 .fats {
     width: 383px;
 }
 
 .catalog_lower_row {
     display: flex;
+    margin-top: 0;
+    margin-bottom: 44px;
 }
 
 .fillers {
@@ -565,10 +747,47 @@ a.contacts_tel {
     border-radius: 20px;
 }
 
+/*Каталог, товары*/
+.products_list {
+  margin-top: 0;
+  margin-bottom: 57px;
+  padding: 0;
+  list-style-type: none;
+}
+
 /*Каталог, пагинация*/
+.products_list_footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination {
+  display: flex;
+  margin: 0 0 0 335px;
+  padding: 0;
+  list-style-type: none;
+}
+
 .pagination_link {
+    display: block;
     line-height: 20px;
     color: #2D3440;
     text-align: center;
     text-decoration: none;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination_link.pagination_prev {
+  min-width: 16px;
+  min-height: 16px;
+  padding-right: 8px;
+}
+
+.pagination_link.pagination_next {
+  min-width: 16px;
+  min-height: 16px;
+  padding-left: 8px;
 }
