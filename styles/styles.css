@@ -127,8 +127,8 @@ body {
 
 .main_container {
     flex-grow: 1;
-    padding-top: 24px;
-    padding-bottom: 48px;
+    margin-top: 24px;
+    margin-bottom: 48px;
 }
 
 .page_container {
@@ -143,7 +143,7 @@ body {
 /*Слайдер розовый*/
 .slider {
     margin: 0;
-    padding: 0 0 80px 0;
+    margin-bottom: 80px;
 }
 
 .slider_item {
@@ -170,7 +170,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     text-align: left;
-    margin: 0 0 48px 0;
+    margin-bottom: 48px;
 }
 
 .button_dark {
@@ -215,8 +215,8 @@ body {
 
 /*Баннер*/
 .banner {
-    margin: 0;
-    padding: 0 0 80px 0;
+    margin-bottom: 80px;
+    padding: 0;
 }
 
 .banner_list {
@@ -232,7 +232,7 @@ body {
     font-size: 32px;
     line-height: 46px;
     text-align: center;
-    margin: 0 0 55px 0;
+    margin-bottom: 55px;
 }
 
 .banner_item {
@@ -254,7 +254,8 @@ body {
     font-size: 16px;
     line-height: 22px;
     text-align: left;
-    margin: 0 0 28px 36px;
+    margin-bottom: 28px;
+    margin-left: 36px;
 }
 
 .banner_item_title {
@@ -266,15 +267,15 @@ body {
 }
 
 .button_gift {
-  margin: 0 0 0 36px;
-  padding: 12px 32px  12px  32px;
+  margin-left: 36px;
+  padding: 12px 32px;
   border-radius: 26px;
 }
 
 /*Популярные продукты*/
 .popular_products {
-    margin: 0;
-    padding: 0 0 80px 0;
+    margin-bottom: 80px;
+    padding: 0;
 }
 
 .popular_products_list {
@@ -303,7 +304,7 @@ body {
     line-height: 46px;
     background-color: #FEAFC3;
     text-align: center;
-    margin: 0 0 56px 0;
+    margin-bottom: 56px;
 }
 
 .popular_product_card_link,
@@ -328,7 +329,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 16px;
     padding: 24px;
-    margin: 0 0 80px 0;
+    margin-bottom: 80px;
 }
 
 .about_title {
@@ -373,7 +374,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: auto 0;
-    padding: 0 0 80px 0;
+    padding-bottom: 80px;
 }
 .blog {
     background-image: url(../images/backgrounds/blog_icecream_background.jpg);
@@ -392,7 +393,7 @@ body {
 
 .blog_title {
     color: #565C66;
-    margin-top: 32.6px;
+    margin-top: 33px;
     margin-bottom: 12px;
 }
 
@@ -480,7 +481,7 @@ input::placeholder {
 .delivery_form_text {
   color: #565C66;
   display: block;
-  margin: 40px 80px 32px 40px
+  margin: 40px 80px 32px 40px;
 }
 
 .delivery_user_data {
@@ -569,7 +570,7 @@ a.contacts_tel {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 0 0 0 4px;
+  margin-left: 4px;
   padding: 0;
 }
 
@@ -668,8 +669,8 @@ a.contacts_tel {
 
 /*Каталог, главная*/
 .main_inner {
-  padding-top: 32px;
-  padding-bottom: 88px;
+  margin-top: 32px;
+  margin-bottom: 88px;
 }
 
 .glacyshop_list {
@@ -709,7 +710,7 @@ a.contacts_tel {
 }
 
 .catalog_filter_title {
-  padding: 0 0 8px;
+  margin-bottom: 8px;
 }
 
 .catalog_filter_list {
@@ -723,7 +724,7 @@ a.contacts_tel {
   margin-right: 16px;
 }
 
-.catalog_filter_list li:nth-child(last) {
+.catalog_filter_list li:last-child {
   margin-right: 0;
 }
 
@@ -763,7 +764,7 @@ a.contacts_tel {
 
 .pagination {
   display: flex;
-  margin: 0 0 0 335px;
+  margin-left: 335px;
   padding: 0;
   list-style-type: none;
 }
