@@ -182,10 +182,12 @@
                     </a>
                         <p class="popular_products_text">Сливочное мороженое<br>
                         с малиновым джемом</p>
+                      <div class="to_buy_content">
                         <b class="popular_products_price">310 ₽/кг</b>
                         <button class="basket_button" type="button">
                             <span class="visually_hidden">Корзина</span>
                         </button>
+                      </div>
                 </li>
                 <li class="popular_products_item">
                     <a class="popular_product_card_link" href="#">
@@ -194,10 +196,12 @@
                     </a>
                         <p class="popular_products_text">Фисташковый пломбир<br>
                         с кусочками шоколада</p>
+                        <div class="to_buy_content">
                         <b class="popular_products_price">340 ₽/кг</b>
                         <button class="basket_button" type="button">
                             <span class="visually_hidden">Корзина</span>
                         </button>
+                        </div>
                 </li>
                 <li class="popular_products_item">
                     <a class="popular_product_card_link" href="#">
@@ -206,10 +210,12 @@
                     </a>
                         <p class="popular_products_text">Крем-брюле<br>
                         с черничным джемом</p>
+                        <div class="to_buy_content">
                         <b class="popular_products_price">330 ₽/кг</b>
                         <button class="basket_button" type="button">
                             <span class="visually_hidden">Корзина</span>
                         </button>
+                        </div>
                 </li>
                 <li class="popular_products_item">
                     <a class="popular_product_card_link" href="#">
@@ -218,10 +224,12 @@
                     </a>
                         <p class="popular_products_text">Ванильный пломбир<br>
                         со сладкой посыпкой</p>
+                        <div class="to_buy_content">
                         <b class="popular_products_price">320 ₽/кг</b>
                         <button class="basket_button" type="button">
                             <span class="visually_hidden">Корзина</span>
                         </button>
+                        </div>
                 </li>
             </ul>
         </section>
@@ -293,16 +301,22 @@
                 <p class="delivery_form_text">Укажите адрес и дату доставки, и мы свяжемся<br>
                 с вами, чтобы подтвердить заказ.</p>
                 <form class="delivery_user_data" action="https://echo.htmlacademy.ru" method="post">
-                    <p class="delivery_user_form">
-                        <label class="delivery_date"><b>Дата</b>
+                    <p class="delivery_user_form delivery_form_date">
+                        <label class="delivery_date"><b class="delivery_label">Дата</b>
+                          <button class="info">
+                            <span class="visually_hidden">Посмотреть дополнительную информацию</span></button>
                             <input class="field" type="date" name="delivery_date" placeholder="01.04.2020">
                         </label>
-                        <label class="delivery_phone_number"><b>Телефон</b>
+                    </p>
+                    <p class="delivery_user_form delivery_form_phone">
+                        <label class="delivery_phone_number"><b class="delivery_label">Телефон</b>
                             <input class="field" type="tel" name="phone_number" placeholder="+7 800 999-00-00">
                         </label>
                     </p>
-                    <p class="delivery_user_form">
-                        <label class="delivery_address"><b>Адрес</b>
+                    <p class="delivery_user_form delivery_form_address">
+                        <label class="delivery_address"><b class="delivery_label">Адрес</b>
+                          <button class="info">
+                            <span class="visually_hidden">Посмотреть дополнительную информацию</span></button>
                             <input class="field" type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
                         </label>
                     </p>
